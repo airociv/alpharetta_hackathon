@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="navbar.css" rel="stylesheet" type="text/css" />
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="rightcolumn.css" rel="stylesheet" type="text/css" />
+  <link href="popupchat.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <div class="row"> <!--planning out columns -->
+    
+    <div class="navbar">
+      <img class="logo" src="logo.png" alt="Atlanta Mission Logo">
+      
+      <!--navbar -->
+      <ul>
+        <li><a class="active" onclick="switchPage3()">HOME</a></li>
+        <li><a class="active" onclick="switchPage()" >SERVICES</a></li>
+        <li><a class="active" onclick="switchPage1()">SCHEDULE</a></li>
+        <li><a class="active" onclick="switchPage2()">PROGRESS</a></li>
+      </ul>
+    </div>
+    
+    <a class = "main" id="home">  <!--MAIN SECTION -->
+      <img class="maintitle" src="title.png" alt="Atlanta Mission Title">
+      <h2 class = "directionaltext2"> OUR MISSION </h2>
+      <h2 class = "fillertext2"> Atlanta Mission is the city’s largest and longest-running provider of services to homeless men, women, and children, offering food, shelter, addiction recovery, job attainment, counseling, and educational services. Started as a soup kitchen in 1938 to feed people displaced by The Great Depression, the nonprofit has since expanded to serve over one-third of the state’s homeless population. In 2021, the Atlanta Mission served 350,000+ meals, provided 100,000 beds, and offered thousands of counseling sessions.
+ </h2>
+      <div class = "container">
+        <video controls autoplay>
+          <source src="atlanta vid.mov" type="video/mp4">
+          <source src="atlanta vid.ogg" type="video/ogg">
+        </video>
+      </div>
+      
+      <img class="homepageimg" src="home.png">
+      <img class="homepageinfo" src="homeinfo.png">
+
+      <h2 class = "directionaltext3 spacing"> TRANSFORMATION MODEL </h2>
+      <img class="model" src="model.png">
+      
+      <h2 class = "directionaltext3 spacing"> OUR VISION </h2>
+      <img class= "vision" src="vision.png">
+      
+        <img class= "welcome" src="impact.png" >
+    </a>
+
+    <a class = "main" id="progress">  <!--PROGRESS SECTION -->
+      <img class="maintitle" src="title.png" alt="Atlanta Mission Title">
+        <script src="script.js"></script>
+      
+    </a>
+
+    <a class = "main" id="schedule"> <!--SCHEDULE -->
+      <img class="maintitle2" src="title.png" alt="Atlanta Mission Title">
+      <h2 class="fillertext"> Our social workers are available to consult with clients in Find Hope to connect them with appropriate services in the Atlanta metro area. We want our clients to have the essential resources they need to meet their health needs as well as take steps to end their homelessness. </h2>
+
+      <h2 class= "directionaltext"> SCHEDULE AN APPOINTMENT </h2>
+      
+          <div class = "dropdown"><form>
+    
+          <label for="event">I want to sign up for a:</label>
+          <select name="event" id="event">
+            <option value="caseWorker">One-on-one Case Worker Meeting</option>
+            <option value="class">Vocational Class</option>
+            <option value="counseling" selected>Counseling Appointment</option>
+          </select>
+          </form>
+      
+          </div>
+      
+      <img class="calendar" src="schedule.png">
+    </a>
+
+    
+    <div class ="rightcolumn">
+      <div class= "profile">
+        <img class = "profileimg" src="profile.png" > </img>
+        <p class = "profilecard"> MISSION POSSIBLE </p>
+      </div>
+      <img class="arrow" src="levelarrow.png" alt="Badge System Arrow">
+      <button class="open-button" onclick="openForm()">CHAT</button>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1 class="chattitle">CHAT</h1>
+
+            <label for="msg"><b>MESSAGE</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">SEND</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+          <script src="script.js"></script>
+          </form>
+        </div>
+    </div>
+
+  </div>
+
+  <stan class = "main" id="services"> <!--SERVICES PAGE -->
+    <img class="title" src="title.png" alt="Atlanta Mission Title">
+    <div class="inlineservices">
+      <img class="services1" src="services3.png">
+      <img class="services2" src="services2.png">
+      
+    </div>
+    <div class = "main">
+      <form id = "form">
+      <div class="inlineform">
+
+        <div class="partoneform">
+        
+        <label class = "formtext" for="fname">FIRST NAME:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+          
+        <label class = "formtext" for="lname">LAST NAME:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+          
+         <label class = "formtext"  for="email">EMAIL::</label><br>
+        <input type="text" id="email" name="email"> <br>
+          
+        <label class = "formtext"  for="number">NUMBER:</label><br>
+        <input type="text" id="number" name="number"><br>
+
+        </div>
+
+        <div class="parttwoform">
+
+        
+        <label class = "formtext"  for="message">MESSAGE:</label><br>
+        <textarea class = "formtext2" name="message" rows="7" cols="30">Leave us a message of what you need help with. We can provide you with meals, shelter, laundry, you name it. Just ask!
+        </textarea>
+
+        <input class = "submit" type="submit" name="submit" value="SUBMIT" onclick = confetti()/>
+        
+        </div>
+        
+      <script type="module">
+        import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+        confetti();
+        </script>
+      </form>
+    </div>
+  </stan>  
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

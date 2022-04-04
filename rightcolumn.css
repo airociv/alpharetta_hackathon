@@ -1,0 +1,55 @@
+.rightcolumn {
+  position: fixed;
+  padding-top: 3px;
+  padding-left: 1020px;
+  height: 95%;
+  width: 400px;
+  z-index: 4;
+}
+
+.arrow {
+  position: relative;
+  padding-top: 14px;
+  height: 520px;
+  top: 40px;
+  left: 140px;
+}
+
+.arrow:hover {
+  transform: scale(1.05);
+}
+
+.profile {
+  background: black;
+  padding-left: 20px;
+  width: 300px;
+  position: relative;
+  color: white;
+  left: 80px;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 16px;
+  border: none;
+  height: 70px;
+  z-index: 20;
+}
+
+
+.profilecard {
+  position: absolute;
+  display: inline;
+  padding-top: 11px;
+  padding-left: 25px;
+  z-index: 9;
+  font-size: 15px;
+  
+}
+
+.profileimg {
+  position: relative;
+  padding-top: 11px;
+  width: 50px;
+  z-index: 8;
+}

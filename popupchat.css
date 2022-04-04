@@ -1,0 +1,112 @@
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #ffda00;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  color: black;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: relative;
+  left: 85px;
+  top: 120px;
+  width: 310px;
+  height: 70px;
+  border-radius: 16px;
+}
+
+.open-button:hover {
+  cursor:pointer;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  font-family: Verdana, sans-serif;
+  font-color: white;
+  background: black;
+  border-radius: 30px;
+  display: none;
+  bottom: 0;
+  position: relative;
+  left: 85px;
+  bottom: 350px;
+  width: 310px;
+  z-index: 20;
+}
+
+/* Add styles to the form container */
+.form-container {
+  font-family: Verdana, sans-serif;
+  font-color: white;
+  border-radius: 60px;
+  max-width: 200px;
+  padding: 20px;
+  background-color: black;
+  padding-left: 45px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #91c0c8;
+  font-color: white; 
+  font-family: Verdana, sans-serif;
+  resize: none;
+  min-height: 80px;
+  padding-bottom: 50px;
+  letter-spacing: 1.1px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #91c0c8;
+  outline: none;
+  font-color: white;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: black;
+  font-family: Verdana, sans-serif;
+  color: white;
+  padding: 6px 10px;
+  cursor: pointer;
+  width: 105%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 60px;
+  position: relative;
+  z-index: 100;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: black;
+  font-family: Verdana, sans-serif;
+  color: white;
+  border-radius: 60px;
+  position: relative;
+  z-index: 100;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover  {
+  opacity: 1.0;
+  transform: scale(1.05);
+  cursor: pointer;
+  position: relative;
+  z-index: 400;
+}
+
+.chattitle {
+  color: white;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 1.01px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 3px;
+}
