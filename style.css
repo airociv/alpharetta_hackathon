@@ -1,0 +1,106 @@
+.wow {
+  width: 100px;
+}
+
+
+.row {
+  display: flex;
+  
+}
+
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+body {
+}
+
+
+
+/* Text CSS */
+
+h2 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+.main {
+  position: relative;
+  top: 100px;
+  flex-grow: 2;
+}
+
+.logo {
+  width: 100px;
+  padding-left: 33px;
+}
+
+
+.ontop {
+  position: relative;
+  z-index: 9;
+  left:260px; 
+  top:-63px;
+  background: white;
+  width: 200px;
+}
+
+.maintitle {
+  position: relative;
+  bottom: 105px;
+  
+  width: 400px;
+  left: 206px;
+  z-index: 9;
+}
+
+.maintitle2 {
+  position: relative;
+  top: 83px;
+
+  left: -14px;
+  width: 400px;
+  z-index: 9;
+}
+
+.title {
+  position: relative;
+  left: -14px;
+  top: 83px;
+  width: 400px;
+}
+
+video {
+  position: absolute;
+  top: 55px;
+  left: 260px;
+  width: 700px;
+  height: 300px;
+  z-index: 12;
+}
+
+.maincontent {
+  position: relative;
+  top: 600px;
+}
+
+#progress {
+  top:125px;
+  left: 40px;
+  z-index: 7;
+}
+
+.bigtitles {
+  
+}
