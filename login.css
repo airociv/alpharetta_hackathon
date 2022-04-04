@@ -1,0 +1,71 @@
+.container {
+  padding-left: 75px;
+  padding-right: 25px;
+  padding-top: 30px;
+}
+
+.login {
+  display: block;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  z-index: -1;
+}
+
+.slineheight {
+
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+}
+
+.loginpage {
+  font-family: Verdana, sans-serif;
+}
+
+.fulltitle {
+  padding-top: 80px;
+  width: 800px;
+  padding-bottom: 40px;
+}
+
+input {
+  width: 250px;
+}
+
+.loginbtn {
+  background-color: #ffda00;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-color: black;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  height: 47px;
+  width: 200px;
+  position: fixed;
+  top: 585px;
+  left: 110px;
+  border: none;
+  border-radius: 60px;
+}
+
+.loginbtn:hover {
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,35 @@
+.navbar {
+  position: fixed;
+  border-radius: 20px;
+  width: 200px;
+  background: #91c0c8;
+  padding-top: 25px;
+  padding-left: 20px;
+  height: 95%;
+  z-index: 10;
+}
+
+ul { 
+  list-style-type: none;
+  margin: 0;
+  padding-top: 60px;
+  padding-left: 40px;
+  width: 200px;
+}
+
+li a {
+  display: block;
+  line-height: 3;
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-stretch: extra-expanded;
+}
+
+
+/* Change the link color on hover */
+li a:hover {
+  color: #ffda03;
+  cursor: pointer;
+}
+
